@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 2, Task 2</title>
+  </head>
+  <body>
+    <h1>Задача 2</h1>
+
+    <p>
+      Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість
+      років.
+    </p>
+    <script>
+      // Просимо користувача вказати рік його народження та поточний рік
+      const currentYear = parseInt(prompt("Введіть поточний рік"));
+      const yearOfBirth = parseInt(prompt("Введіть рік народженя"));
+
+      // Знаходимо результат
+      const userAge = currentYear - yearOfBirth;
+
+      // Виводимо результат
+      document.write(`Вам зараз ${userAge} рочків^^`);
+    </script>
+  </body>
+</html>

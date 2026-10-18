@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 2, Task 1</title>
+  </head>
+  <body>
+    <h1>Задача 1</h1>
+
+    <p>
+      Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у
+      формі таблиці.
+    </p>
+
+    <script>
+      // Просимо користувача ввести a b
+      const a = parseFloat(prompt("Введіть число a"));
+      const b = parseFloat(prompt("Введіть число b"));
+
+      // Знаходимо результат
+
+      const resultAdd = a + b;
+      const resultMulti = a * b;
+      const resultDivision = a / b;
+      // Виводимо результат
+
+      document.write(`
+      <table border="1">
+        <tr>
+          <th>Operation</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>Addition</td>
+          <td>${resultAdd}</td>
+        </tr>
+        <tr>
+          <td>Multiplication</td>
+          <td>${resultMulti}</td>
+        </tr>
+        <tr>
+          <td>Division</td>
+          <td>${resultDivision}</td>
+        </tr>
+      </table>
+    `);
+    </script>
+  </body>
+</html>
