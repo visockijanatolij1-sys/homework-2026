@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 3, Task 5</title>
+  </head>
+  <body>
+    <p>
+      З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий
+      автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного
+      засобу, яким він може керувати.
+    </p>
+    <script>
+      // Просимо користувача ввести назву категорії водія
+      const userLicenceCategory = prompt(
+        "Введіть назву категорії водія(A, B, C)",
+      );
+
+      // Знаходимо результат
+      let result = 0;
+      if (userLicenceCategory === "A") {
+        result = "Ви можете керувати Мотоцикл";
+      } else if (userLicenceCategory === "B") {
+        result = "Ви можете керувати Легковий автомобіль";
+      } else if (userLicenceCategory === "C") {
+        result = "Ви можете керувати Вантажний автомобіль";
+      } else {
+        result = "Щось пішло не так";
+      }
+      // Виводимо результат
+      document.write(`Результак перевірки - ${result}`);
+    </script>
+  </body>
+</html>
